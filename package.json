@@ -1,0 +1,26 @@
+{
+  "name": "axios-savefile",
+  "version": "1.0.0",
+  "description": "axios下载文件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JYFiaueng/axios-savefile.git"
+  },
+  "keywords": [
+    "axios",
+    "download"
+  ],
+  "author": "jiayufeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JYFiaueng/axios-savefile/issues"
+  },
+  "homepage": "https://github.com/JYFiaueng/axios-savefile#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
