@@ -1,6 +1,12 @@
-# axios-savefile
+## axios-savefile
+使用 axios 实现文件下载
 
-#### example：
+### Installation
+```
+npm i axios-savefile
+```
+
+### example：
 ```
 const axiosSaveFile = require('axios-savefile');
 
