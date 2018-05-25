@@ -1,6 +1,12 @@
 ## axios-savefile
 使用 axios 实现文件下载
 
+![npm](https://img.shields.io/npm/v/axios-savefile.svg)
+![npm](https://img.shields.io/npm/dm/axios-savefile.svg)
+
+[![GitHub forks](https://img.shields.io/github/forks/JYFiaueng/axios-savefile.svg?style=social&label=Fork)](https://github.com/JYFiaueng/axios-savefile/fork)
+[![GitHub stars](https://img.shields.io/github/stars/JYFiaueng/axios-savefile.svg?style=social&label=Star)](https://github.com/JYFiaueng/axios-savefile)
+
 ### Installation
 ```
 npm i axios-savefile
