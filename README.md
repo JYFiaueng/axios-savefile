@@ -3,6 +3,7 @@
 
 ![npm](https://img.shields.io/npm/v/axios-savefile.svg)
 ![npm](https://img.shields.io/npm/dm/axios-savefile.svg)
+![npm](https://img.shields.io/npm/l/axios-savefile.svg)
 
 [![GitHub forks](https://img.shields.io/github/forks/JYFiaueng/axios-savefile.svg?style=social&label=Fork)](https://github.com/JYFiaueng/axios-savefile/fork)
 [![GitHub stars](https://img.shields.io/github/stars/JYFiaueng/axios-savefile.svg?style=social&label=Star)](https://github.com/JYFiaueng/axios-savefile)
