@@ -1,10 +1,10 @@
 {
   "name": "axios-savefile",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "axios download file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -15,12 +15,15 @@
     "download"
   ],
   "author": "jiayufeng",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JYFiaueng/axios-savefile/issues"
   },
   "homepage": "https://github.com/JYFiaueng/axios-savefile#readme",
   "dependencies": {
     "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }
