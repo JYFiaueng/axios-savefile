@@ -9,11 +9,7 @@ describe('测试下载功能', async function () {
   it ('download test.png', async function () {
 
     try{
-      await axiosSavefile({
-        url: filePath,
-        method: 'get',
-        savePath: tempPath
-      });
+      await axiosSavefile(filePath, tempPath);
     } catch (err) {
       console.log(err);
     } finally {

@@ -7,26 +7,22 @@ const isString = (str) => {
   return typeof str === 'string' && str !== null;
 };
 
-const API = axios.create();
+module.exports = async (url, savePath) => {
 
-API.interceptors.request.use((config) => {
-
-  if (isString(config.savePath)) {
-    config.responseType = 'stream';
-    config.transformResponse = [async (data) => {
-      await new Promise((resolve, reject) => {
-        const writeStream = fs.createWriteStream(config.savePath);
-        data.on('end', (err) => {
-          if (err) reject();
-          resolve();
-        });
-        data.pipe(writeStream);
-      });
-    }];
+  if (!isString(savePath) || !isString(url)) {
+    throw Error('lack parameter')
   }
-
-  return config;
-
-});
-
-module.exports = API;
+  let data = await axios({
+    method: 'get',
+    url,
+    responseType: 'stream'
+  }).then(res => res.data)
+  await new Promise((resolve, reject) => {
+    const writeStream = fs.createWriteStream(savePath)
+    data.on('end', (err) => {
+      if (err) reject()
+      resolve()
+    })
+    data.pipe(writeStream)
+  })
+}
