@@ -19,7 +19,7 @@ module.exports = async (url, savePath) => {
   }).then(res => res.data)
   await new Promise((resolve, reject) => {
     const writeStream = fs.createWriteStream(savePath)
-    data.on('end', (err) => {
+    writeStream.on('finish', (err) => {
       if (err) reject()
       resolve()
     })

@@ -1,6 +1,6 @@
 {
   "name": "axios-savefile",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "axios download file",
   "main": "index.js",
   "scripts": {
